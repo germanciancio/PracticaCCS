@@ -1,6 +1,6 @@
 div{
     font-family:'Arial';
-    background-color: chartreuse;
+    background-color: rgb(100, 173, 28);
     margin: 10px 10px;
     text-align: center;
     font-weight: bolder;
@@ -9,19 +9,29 @@ div{
     display:  inline-block;
     vertical-align: middle;
 }
+
 .triangulo_lateral{
-    transform: translateX(0);
+   -webkit-transform: translateX(0);
 }
+
 .triangulo_lateral:before{
-    content: ;
+    content: '' ;
+    -webkit-transition-duration: 0.4s;
+
 border-style: solid;
 border-width:  15px 15px 15px 0px;
-    width: 30px;
-    height: 30px;
-    background: red;
+border-color: transparent    
+             rgb(100, 173, 28) 
+              transparent     
+              transparent;
 
     position: absolute;
     left: 0px;
     top: 50%;
     margin-top: -15px;
- }
+}
+.triangulo_lateral:hover:before{
+    left: -13px;
+}
+
+ 
